@@ -5,27 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal Solution</title>
 
-    <!-- customs css -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
+   
+   
+
+      <!-- font  EB-Garamond link -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<!--  font poppins link -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- tailwind CSS and daisyUI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 <!-- font awesome kit -->
 <script src="https://kit.fontawesome.com/caa1c3b435.js" crossorigin="anonymous"></script>
+
+<style>
+    .font-eb-garamond{
+        font-family: 'EB Garamond', serif;
+       
+    }
+    .font-poppins{
+        font-family: 'Poppins', sans-serif;
+    }
+</style>
+  <!-- customs css -->
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            "btn-bg": '#B68C5A',
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-     <header>
+<body class="container mx-auto">
+     <header class="lg:container mx-auto">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
               <div class="dropdown">
@@ -47,7 +72,7 @@
               </a>
             </div>
             <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
+              <ul class="menu menu-horizontal px-1 text-[#707070]">
                 <li><a>Home</a></li>
                 <li><a>Services <i class="fa-solid fa-greater-than"></i></a></li>
                 <li><a>Cases <i class="fa-solid fa-greater-than"></i></a></li>
@@ -56,7 +81,7 @@
               </ul>
             </div>
             <div class="navbar-end">
-              <a class="btn">Button</a>
+              <a class="btn bg-btn-bg  text-white font-poppins rounded-lg">Free Consultation</a>
             </div>
           </div>
      </header>
